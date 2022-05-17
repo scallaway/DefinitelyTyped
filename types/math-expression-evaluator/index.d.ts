@@ -16,8 +16,8 @@ declare class Mexp {
     formulaEval(): Mexp;
     toPostfix(): Mexp;
     postfixEval(pair?: object): number|string;
-    static eval(exp: string, tokens?: Token[], pair?: object): string;
-    static eval(exp: string, mexp?: object): string;
+    static eval(exp: string, tokens?: Token[], pair?: object): number | string;
+    static eval(exp: string, mexp?: object): number | string;
     static addToken(tokens: Token[]): void;
 }
 
